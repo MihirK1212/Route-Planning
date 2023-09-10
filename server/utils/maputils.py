@@ -10,11 +10,11 @@ import math
 import serializers
 import utils
 
-GOOGLE_API_KEY = "AIzaSyC4mDyxBB_jpI8MDhZqDqCDWyR8A34GaF4"
+GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 
 
-f = open('./utils/awb_to_coordinate_temp.json')
+f = open('./utils/awb_to_coordinate.json')
 awb_to_coordinate = json.load(f)
 
 def geocode(awb_id,address):
